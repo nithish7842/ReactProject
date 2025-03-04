@@ -1,10 +1,16 @@
 import React, { ReactNode }  from "react";
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Pressable, Text, Touchable, View } from "react-native";
 import {styles} from './styles'
 import Button from "../../../components/Button";
 
-const Screen = ()=>
+const Screen = ({navigation})=>
 {
+    const onsignup =()=>{
+        navigation.navigate('SignUp')
+    }
+    const onsignin =()=>{
+        navigation.navigate('Signin')
+    }
     return[
         <View style={styles.container}>
         <Image resizeMode='contain' source={require('../../../assets/splash_image.png')}/>,
@@ -13,11 +19,13 @@ const Screen = ()=>
         <Text style={styles.description}> All you need</Text>,
         <Text style={styles.title}>Here!</Text>
         </View>
-
-            <Button title='Sign Up'/>
-            <Pressable hitSlop={20}>
-                <Text style={styles.signin}>Sign In</Text>
+            <View style={styles.button}>
+            <Button onpress={onsignup} title='Sign Up'/>
+            </View>
+            <Pressable  hitSlop={20}>
+                <Text style={styles.signin} onPress={onsignin}>Sign In</Text>
             </Pressable>
+            
             </View>
     ]
 }

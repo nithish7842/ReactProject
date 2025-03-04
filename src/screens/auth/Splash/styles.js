@@ -35,5 +35,9 @@ export const styles= StyleSheet.create({
         fontSize:16,
         textAlign:'center',
         marginTop:30
+    },
+    button:{
+        flexDirection:'row',
+        width:'100%'
     }
 })
