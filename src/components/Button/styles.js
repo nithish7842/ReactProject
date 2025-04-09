@@ -4,9 +4,10 @@ import { colors } from "../../Utility/colors";
 export const styles= StyleSheet.create({
 container:{
     backgroundColor:colors.blue,
+   
     paddingHorizontal: 8,
     paddingVertical:20,
-    width:'303px',
+    width:'103px',
     height:'60px',
     borderRadius:8,
     flex:1,
