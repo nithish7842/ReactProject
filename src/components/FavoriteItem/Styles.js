@@ -4,7 +4,7 @@ import { colors } from '../../Utility/colors';
 
 export const styles = StyleSheet.create({
     container: {
-        paddingVertical:16,
+        paddingVertical:19,
         marginHorizontal:24,
         flexDirection:'row',
         borderBottomWidth:1,
@@ -18,16 +18,16 @@ export const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 10,
-       marginRight:20
+       marginRight:20,
     },
     price: {
         color: colors.black,
         paddingBottom: 8,
     },
     icon:{
-        width:24,
-        height:24,
-        marginLeft:8
+        width:14,
+        height:18,
+        marginLeft:8,
     },
     content:{
         flex:1

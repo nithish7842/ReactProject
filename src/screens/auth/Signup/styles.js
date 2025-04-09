@@ -8,7 +8,7 @@ export const styles= StyleSheet.create({
 
     },
     signup:{
-    marginVertical:20
+    marginVertical:20,
     },
     aggrerow:
     {
